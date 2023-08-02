@@ -239,7 +239,7 @@ class Game {
     // check for win
     if (this.checkForWin()) {
       document.getElementById('board').innerHTML = '';
-      return this.endGame(`Player ${this.currPlayer} won!`);
+      return this.endGame(`The ${this.currPlayer.color} player won!`);
     }
     // check for tie
     if (this.board.every(row => row.every(cell => cell))) {
